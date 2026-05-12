@@ -1,0 +1,155 @@
+# P�ker de Dados — Manual de Usuario
+
+> Este manual explica cómo usar la aplicación P�ker de Dados, desde la configuración inicial hasta el final de una partida.
+
+---
+
+## Índice
+
+1. [Pantalla de Configuración (Setup)](#1-pantalla-de-configuración-setup)
+2. [Reanudar una Partida Guardada](#2-reanudar-una-partida-guardada)
+3. [Pantalla de Juego](#3-pantalla-de-juego)
+4. [Cómo Jugar un Turno](#4-cómo-jugar-un-turno)
+5. [Acumulación](#5-acumulación)
+6. [Tabla de Puntuación (Scorecard)](#6-tabla-de-puntuación-scorecard)
+7. [Fin de la Partida](#7-fin-de-la-partida)
+8. [Logros (Achievements)](#8-logros-achievements)
+9. [Jugadores Controlados por IA](#9-jugadores-controlados-por-ia)
+10. [Seleccionar Idioma](#10-seleccionar-idioma)
+11. [Preguntas Frecuentes](#11-preguntas-frecuentes)
+
+---
+
+## 1. Pantalla de Configuración (Setup)
+
+Al abrir la aplicación, se muestra la pantalla de configuración:
+
+### Número de Jugadores
+
+Selecciona de **1 a 4 jugadores** con el selector en la parte superior.
+
+### Configurar Cada Jugador
+
+- **Nombre** — campo de texto editable.
+- **Humano / IA** — toggle para definir si el jugador es controlado por humano o IA.
+- **Perfil de IA** (cuando la IA está activa):
+  | Perfil | Comportamiento |
+  |---|---|
+  | Equilibrado | Estrategia equilibrada entre figuras y especiales |
+  | Agresivo | Prioriza especiales (escaleras, full house) |
+  | Cauteloso | Se centra en cerrar filas de figura con seguridad |
+  | Soñador | Juega solo para Póker; acepta otros resultados solo si son de mano |
+
+### Iniciar la Partida
+
+Pulsa **"Iniciar Juego"** para comenzar con la configuración actual.
+
+> La última configuración usada se guarda automáticamente.
+
+---
+
+## 2. Reanudar una Partida Guardada
+
+Si existe una partida en curso, aparece el botón **"Continuar Partida Guardada"** en la pantalla de configuración.
+
+---
+
+## 3. Pantalla de Juego
+
+```
+┌─────────────────────────────────────┐
+│          ÁREA DE LOS DADOS          │
+├─────────────────────────────────────┤
+│          PANEL DE ACCIONES          │
+├─────────────────────────────────────┤
+│          SCORECARD                  │
+└─────────────────────────────────────┘
+```
+
+En pantallas anchas (tablet/escritorio), el scorecard aparece en una columna lateral.
+
+---
+
+## 4. Cómo Jugar un Turno
+
+### Paso 1 — Lanzar los dados
+
+Pulsa **"Lanzar"** para tirar los 5 dados.
+
+### Paso 2 — Elegir una acción
+
+#### Opción A: Guardar dados y relanzar
+Pulsa los dados que quieras **conservar** (se marcan con 🔒), luego pulsa **"Guardar y Lanzar"**.
+
+#### Opción B: Anotar puntos
+Pulsa una fila elegible en el panel de acciones para registrar los puntos. Todos los dados se recogen; el próximo lanzamiento cuenta como **"de mano"**.
+
+#### Opción C: Pasar
+Pulsa **"Pasar"** para avanzar al próximo lanzamiento.
+
+Tras el **3er lanzamiento** sin anotar nada, el turno pasa al siguiente jugador.
+
+---
+
+## 5. Acumulación
+
+Se activa automáticamente cuando, al anotar en una fila de figura, los 5 dados muestran la figura objetivo o 9s.
+
+- **Continuar** — lanza todos los dados y suma los puntos al acumulado.
+- **Guardar + Relanzar** — guarda algunos dados y relanza los demás.
+- **Finalizar** — registra el total acumulado (se hace automáticamente al pulsar "Pasar").
+
+---
+
+## 6. Tabla de Puntuación (Scorecard)
+
+Muestra la puntuación de todos los jugadores en tiempo real. Las filas cerradas aparecen tachadas con fondo rojo.
+
+### Barra de Totales
+
+En la parte inferior siempre visible: total por fila de figura, total de especiales y **total general**.
+
+---
+
+## 7. Fin de la Partida
+
+Termina cuando **4 de las 5 filas de figura** están cerradas. Se muestra la puntuación final con el ganador destacado.
+
+---
+
+## 8. Logros (Achievements)
+
+En la pantalla de configuración, el botón **"Logros"** abre la lista de logros desbloqueables. Los logros se guardan entre sesiones.
+
+---
+
+## 9. Jugadores Controlados por IA
+
+Cuando es el turno de un jugador IA, aparece un icono de robot y la IA juega automáticamente.
+
+---
+
+## 10. Seleccionar Idioma
+
+Pulsa el icono 🌐 en la esquina superior derecha de la pantalla de configuración para elegir el idioma de la aplicación.
+
+---
+
+## 11. Preguntas Frecuentes
+
+**¿Puedo anotar en diferentes filas en el mismo turno?**
+Sí. No se puede anotar **dos veces en la misma fila** en el mismo turno.
+
+**¿Qué pasa si no alcanzo el mínimo?**
+Puedes guardar dados e intentarlo en los lanzamientos siguientes, o pasar.
+
+**¿El Póker solo cuenta de mano?**
+Sí. Si no es de mano, el resultado se trata como un lanzamiento normal.
+
+**¿Puedo salir y reanudar después?**
+Sí. El juego se guarda automáticamente. Usa "Continuar Partida Guardada" al abrir la app.
+
+---
+
+*P�ker de Dados v1.0 — ¡Buena suerte! 🎲*
+

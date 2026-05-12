@@ -1,0 +1,69 @@
+{
+  "run_id": "20260423_004229",
+  "timestamp_utc": "2026-04-23T00:46:02.506480Z",
+  "config": {
+    "games": 100000,
+    "seed": 20260423,
+    "max_moves": 2500,
+    "mode": "mixed-fair",
+    "mirror_profile": "balanced",
+    "players_per_game": 4,
+    "profiles_pool": [
+      "balanced",
+      "aggressive",
+      "cautious",
+      "dreamer"
+    ]
+  },
+  "integrity": {
+    "completed_games": 100000,
+    "errors": 0,
+    "valid_rate": 1.0
+  },
+  "performance": {
+    "elapsed_ms": 213258,
+    "avg_ms_per_game": 2.13258,
+    "total_moves": 41590144,
+    "avg_moves_per_game": 415.90144
+  },
+  "wins": {
+    "by_profile": {
+      "balanced": 29248,
+      "aggressive": 34911,
+      "cautious": 26918,
+      "dreamer": 8923
+    },
+    "by_seat": {
+      "0": 26394,
+      "1": 25721,
+      "2": 24604,
+      "3": 23281
+    }
+  },
+  "combos": {
+    "total_poker_entries": 473773,
+    "total_royal_poker_entries": 16007,
+    "total_sequence_entries": 862572,
+    "total_full_entries": 1100559,
+    "total_sequence_from_hand": 721617,
+    "total_full_from_hand": 660180,
+    "avg_poker_per_game": 4.73773,
+    "avg_sequence_per_game": 8.62572,
+    "avg_full_per_game": 11.00559,
+    "avg_sequence_from_hand_per_game": 7.21617,
+    "avg_full_from_hand_per_game": 6.6018
+  },
+  "profiles": {
+    "balanced": {
+      "appearances": 100000,
+      "wins": 29248,
+      "win_rate": 0.29248,
+      "avg_score": 828.15392,
+      "median_score": 802.0,
+      "std_score": 221.63717131526766,
+      "avg_poker_entries": 0.89931,
+      "avg_sequence_entries": 1.81178,
+      "avg_full_entries": 3.28819,
+
+  }
+}
