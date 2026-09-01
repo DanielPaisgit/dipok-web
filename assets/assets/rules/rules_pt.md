@@ -74,7 +74,7 @@ A tabela de cada jogador tem **8 linhas**:
 | Q (×4) | | | | | |
 | J (×3) | | | | | |
 | 10 (×2) | | | | | |
-| Seqências | | | | | |
+| Sequências | | | | | |
 | Fullens | | | | | |
 | Poker | | | | | |
 
