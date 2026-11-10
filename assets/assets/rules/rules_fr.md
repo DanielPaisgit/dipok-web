@@ -1,7 +1,9 @@
 # Poker de Dés — Règles du Jeu
 
-> Poker de Dés est la version numérique du classique jeu portugais de **Poker aux Dés**.
+> Bienvenue au Poker de Dés ! Amusez-vous avec ce jeu portugais classique.
 > Cette page contient d'abord une référence rapide, puis les règles complètes.
+
+> 📌 À la fin de cette page, vous trouverez un [**Résumé Visuel**](#resumo) de toutes les règles.
 
 ---
 
@@ -25,6 +27,8 @@
 | J | Valet |
 | 10 | Dix |
 | 9 | Nove (joker) |
+
+<!-- FACE_LEGEND -->
 
 Le **9 (Nove)** est un joker : il compte 1 point pour n'importe quelle figure jouée par le joueur.
 > **Note :** Il n’y a pas d’enseignes (couleurs) — le jeu repose uniquement sur les faces des dés.
@@ -89,9 +93,15 @@ points = (nbre de dés avec la figure × 2) + (nbre de 9 × 1)
 ```
 
 Exemples (en jouant pour les Dames) :
-- [Q, Q, Q, 9, K] → 3×2 + 1×1 = **7 pts**
-- [Q, 9, 9, 9, A] → 1×2 + 3×1 = **5 pts**
-- [Q, Q, Q, Q, 9] → 4×2 + 1×1 = **9 pts**
+
+**[Q, Q, Q, 9, K]** → 3×2 + 1×1 = **7 pts**
+<!-- DICE: Q,Q,Q,9,K -->
+
+**[Q, 9, 9, 9, A]** → 1×2 + 3×1 = **5 pts**
+<!-- DICE: Q,9,9,9,A -->
+
+**[Q, Q, Q, Q, 9]** → 4×2 + 1×1 = **9 pts**
+<!-- DICE: Q,Q,Q,Q,9 -->
 
 #### Colonnes et minimums
 
@@ -131,24 +141,42 @@ Exemple (As, ×6) :
 
 ---
 
-### 4. Combinaisons Spéciales
+### 4. Règle «\u00a0En Main\u00a0»
 
-#### 4.1 Séquences
+Une combinaison est **«\u00a0en main\u00a0»** quand elle est obtenue lors d'un lancer où **les 5 dés sont lancés sans aucun dé gardé**. Dans ces conditions, le score des combinaisons spéciales est **doublé**.
+
+---
+
+### 5. Combinaisons Spéciales
+
+#### 5.1 Séquences
 
 | Séquence | Faces | Points | En main |
 |---|---|---|---|
 | Minimale | K · Q · J · 10 · 9 | 15 | **30** |
 | Maximale | A · K · Q · J · 10 | 30 | **60** |
 
-#### 4.2 Full House
+Séquence minimale :
+<!-- DICE: K,Q,J,10,9 -->
+
+Séquence maximale :
+<!-- DICE: A,K,Q,J,10 -->
+
+#### 5.2 Full House
 
 Toute combinaison de **3 dés d'une face + 2 dés d'une autre** (y compris les 9).
+
+Exemple : **[A, A, A, K, K]** (3 As + 2 Rois)
+<!-- DICE: A,A,A,K,K -->
 
 | Points | En main |
 |---|---|
 | 15 | **30** |
 
-#### 4.3 Cinq identiques
+#### 5.3 Cinq identiques
+
+Exemple : **[K, K, K, K, K]**
+<!-- DICE: K,K,K,K,K -->
 
 | Points | En main |
 |---|---|
@@ -156,7 +184,10 @@ Toute combinaison de **3 dés d'une face + 2 dés d'une autre** (y compris les 9
 
 Compte également comme Full House.
 
-#### 4.4 Cinq 9
+#### 5.4 Cinq 9
+
+Exemple : **[9, 9, 9, 9, 9]**
+<!-- DICE: 9,9,9,9,9 -->
 
 | Points | En main |
 |---|---|
@@ -164,24 +195,27 @@ Compte également comme Full House.
 
 Peut être inscrit dans **n'importe quelle ligne de figure** (au choix du joueur).
 
-#### 4.5 Poker (4 identiques — en main seulement)
+#### 5.5 Poker (4 identiques — en main seulement)
 
 | Type | Condition | Points |
 |---|---|---|
 | Poker | 4 identiques en main | **100** |
 | Poker Royal | 4 As + 1 Roi en main | **200** |
 
----
+Poker — **[K, K, K, K, Q]** :
+<!-- DICE: K,K,K,K,Q -->
 
-### 5. Règle «\u00a0En Main\u00a0»
-
-Une combinaison est **«\u00a0en main\u00a0»** quand elle est obtenue lors d'un lancer où **les 5 dés sont lancés sans aucun dé gardé**. Dans ces conditions, le score des combinaisons spéciales est **doublé**.
+Poker Royal — **[A, A, A, A, K]** :
+<!-- DICE: A,A,A,A,K -->
 
 ---
 
 ### 6. Mode Accumulation
 
 Activé automatiquement lorsque, en marquant dans une ligne de figure, **les 5 dés** affichent la figure cible ou des 9.
+
+Exemple (en jouant pour les Dames — toutes comptent) : **[Q, Q, Q, 9, 9]**
+<!-- DICE: Q,Q,Q,9,9 -->
 
 Le joueur peut continuer à relancer et accumuler des points. Le total accumulé est inscrit dans la colonne à la finalisation (s'il atteint le minimum).
 
@@ -196,6 +230,40 @@ Total = (somme des 5 lignes × multiplicateurs) + Séquences + Full Houses + Pok
 ```
 
 Le joueur avec le **score total le plus élevé** remporte la partie.
+
+---
+
+### 8. Résumé Visuel
+
+```
+┌───────────────────────────────────────────────────────────┐
+│  TOUR : 3 lancers                                         │
+│                                                           │
+│  Lancer → Garder des dés ?                                │
+│            └─ Oui → prochain lancer (garde les dés)       │
+│            └─ Non → Marquer dans une ligne éligible       │
+│                     (ramasse tout, compte comme en main)  │
+│                   → Passer (sans points, sans garder)     │
+│                                                           │
+│  Après 3 lancers → perd son tour                          │
+└───────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  LIGNES DE FIGURE : 5 colonnes, de gauche à droite          │
+│  Min : ≥7 · ≥6 · ≥6 · ≥8 · ≥8                               │
+│  Total final × multiplicateur (×2 si fermé sans ouverture)  │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐
+│  SPÉCIALES (s'additionnent, ne multiplient pas)      │
+│  Séq. min. :   15 / en main : 30                     │
+│  Séq. max. :   30 / en main : 60                     │
+│  Full House :  15 / en main : 30                     │
+│  Cinq ident. : 20 / en main : 40                     │
+│  Cinq 9 :      30 / en main : 60                     │
+│  Poker :      100 / Royal : 200 (en main seulement)  │
+└──────────────────────────────────────────────────────┘
+```
 
 ---
 

@@ -1,7 +1,9 @@
 # Póker de Dados — Reglas del Juego
 
-> Póker de Dados es la versión digital del clásico juego portugués de **Póker de Dados**.
+> ¡Bienvenido a Póker de Dados! Disfruta jugando este clásico juego portugués.
 > Esta página contiene primero una referencia rápida y después las reglas completas.
+
+> 📌 Al final de esta página encontrarás un [**Resumen Visual**](#resumo) de todas las reglas.
 
 ---
 
@@ -25,6 +27,8 @@
 | J | Valet |
 | 10 | Diez |
 | 9 | Nueve (comodín) |
+
+<!-- FACE_LEGEND -->
 
 El **9** es un comodín: cuenta 1 punto para cualquier figura en la que el jugador esté jugando.
 
@@ -91,9 +95,15 @@ puntos = (nº de dados con la figura × 2) + (nº de 9s × 1)
 ```
 
 Ejemplos (anotando para Damas):
-- [Q, Q, Q, 9, K] → 3×2 + 1×1 = **7 pts**
-- [Q, 9, 9, 9, A] → 1×2 + 3×1 = **5 pts**
-- [Q, Q, Q, Q, 9] → 4×2 + 1×1 = **9 pts**
+
+**[Q, Q, Q, 9, K]** → 3×2 + 1×1 = **7 pts**
+<!-- DICE: Q,Q,Q,9,K -->
+
+**[Q, 9, 9, 9, A]** → 1×2 + 3×1 = **5 pts**
+<!-- DICE: Q,9,9,9,A -->
+
+**[Q, Q, Q, Q, 9]** → 4×2 + 1×1 = **9 pts**
+<!-- DICE: Q,Q,Q,Q,9 -->
 
 #### Columnas y mínimos
 
@@ -133,28 +143,46 @@ Ejemplo (Ases, ×6):
 
 ---
 
-### 4. Combinaciones Especiales
+### 4. Regla "De Mano"
 
-#### 4.1 Escaleras
+Una combinación es **"de mano"** cuando se obtiene en un lanzamiento en el que **los 5 dados se lanzan sin ninguno guardado**. En esas condiciones, la puntuación de las combinaciones especiales se **dobla**.
+
+---
+
+### 5. Combinaciones Especiales
+
+#### 5.1 Escaleras
 
 | Escalera | Caras | Puntos | De mano |
 |---|---|---|---|
 | Mínima | K · Q · J · 10 · 9 | 15 | **30** |
 | Máxima | A · K · Q · J · 10 | 30 | **60** |
 
+Escalera mínima:
+<!-- DICE: K,Q,J,10,9 -->
+
+Escalera máxima:
+<!-- DICE: A,K,Q,J,10 -->
+
 Se registran en la fila de **Escaleras**.
 
-#### 4.2 Full House
+#### 5.2 Full House
 
 Cualquier combinación de **3 de una cara + 2 de otra** (incluyendo 9s).
+
+Ejemplo: **[A, A, A, K, K]** (3 Ases + 2 Reyes)
+<!-- DICE: A,A,A,K,K -->
 
 | Puntos | De mano |
 |---|---|
 | 15 | **30** |
 
-#### 4.3 Cinco Iguales
+#### 5.3 Cinco Iguales
 
 Cinco dados con la misma cara (excluyendo 9s).
+
+Ejemplo: **[K, K, K, K, K]**
+<!-- DICE: K,K,K,K,K -->
 
 | Puntos | De mano |
 |---|---|
@@ -162,7 +190,10 @@ Cinco dados con la misma cara (excluyendo 9s).
 
 También cuenta como Full House.
 
-#### 4.4 Cinco Nueves
+#### 5.4 Cinco Nueves
+
+Ejemplo: **[9, 9, 9, 9, 9]**
+<!-- DICE: 9,9,9,9,9 -->
 
 | Puntos | De mano |
 |---|---|
@@ -170,24 +201,27 @@ También cuenta como Full House.
 
 Puede registrarse en **cualquier fila de figura** (a elección del jugador).
 
-#### 4.5 Póker (4 iguales — solo de mano)
+#### 5.5 Póker (4 iguales — solo de mano)
 
 | Tipo | Condición | Puntos |
 |---|---|---|
 | Póker | 4 iguales de mano | **100** |
 | Póker Real | 4 Ases + 1 Rey de mano | **200** |
 
----
+Póker — **[K, K, K, K, Q]**:
+<!-- DICE: K,K,K,K,Q -->
 
-### 5. Regla "De Mano"
-
-Una combinación es **"de mano"** cuando se obtiene en un lanzamiento en el que **los 5 dados se lanzan sin ninguno guardado**. En esas condiciones, la puntuación de las combinaciones especiales se **dobla**.
+Póker Real — **[A, A, A, A, K]**:
+<!-- DICE: A,A,A,A,K -->
 
 ---
 
 ### 6. Modo Acumulación
 
 Se activa automáticamente cuando, al anotar en una fila de figura, **los 5 dados** muestran la figura objetivo o 9s.
+
+Ejemplo (jugando para Damas — todos cuentan): **[Q, Q, Q, 9, 9]**
+<!-- DICE: Q,Q,Q,9,9 -->
 
 El jugador puede continuar relanzando y acumulando puntos. El total acumulado se registra en la columna al finalizar (si alcanza el mínimo).
 
@@ -202,6 +236,40 @@ Total = (suma de las 5 filas × multiplicadores) + Escaleras + Full House + Pók
 ```
 
 Gana el jugador con la **puntuación total más alta**.
+
+---
+
+### 8. Resumen Visual
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│  TURNO: 3 lanzamientos                                         │
+│                                                                │
+│  Lanzamiento → ¿Guardar dados?                                 │
+│                └─ Sí → siguiente lanzamiento (mantiene dados)  │
+│                └─ No → Anotar en una fila elegible             │
+│                          (recoge todos, cuenta como de mano)   │
+│                        → Pasar (sin puntos, sin guardar)       │
+│                                                                │
+│  Tras 3 lanzamientos → pierde el turno                         │
+└────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────┐
+│  FILAS DE FIGURA: 5 columnas, de izquierda a derecha      │
+│  Mín: ≥7 · ≥6 · ≥6 · ≥8 · ≥8                              │
+│  Total final × multiplicador (×2 si cierra sin apertura)  │
+└───────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────┐
+│  ESPECIALES (suman, no multiplican)              │
+│  Escalera mín.: 15 / de mano: 30                 │
+│  Escalera máx.: 30 / de mano: 60                 │
+│  Full House:    15 / de mano: 30                 │
+│  Cinco iguales: 20 / de mano: 40                 │
+│  Cinco nueves:  30 / de mano: 60                 │
+│  Póker:        100 / Real:   200 (solo de mano)  │
+└──────────────────────────────────────────────────┘
+```
 
 ---
 

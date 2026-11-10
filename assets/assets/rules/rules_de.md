@@ -1,7 +1,9 @@
 # Würfelpoker — Spielregeln
 
-> Würfelpoker ist die digitale Version des klassischen portugiesischen Spiels **Würfelpoker**.
+> Willkommen bei Würfelpoker! Viel Spaß mit diesem klassischen portugiesischen Spiel.
 > Diese Seite enthält zunächst eine Kurzreferenz, gefolgt von den vollständigen Regeln.
+
+> 📌 Am Ende dieser Seite findest du eine [**Visuelle Übersicht**](#resumo) aller Regeln.
 
 ---
 
@@ -25,6 +27,8 @@
 | J | Bube |
 | 10 | Zehn |
 | 9 | Neun (Joker) |
+
+<!-- FACE_LEGEND -->
 
 Die **9 (Neun)** ist ein Joker: Sie zählt 1 Punkt für die Figur, für die der Spieler gerade spielt.
 
@@ -91,9 +95,15 @@ Punkte = (Anzahl passender Würfel × 2) + (Anzahl der 9er × 1)
 ```
 
 Beispiele (für Damen werten):
-- [Q, Q, Q, 9, K] → 3×2 + 1×1 = **7 Pkt**
-- [Q, 9, 9, 9, A] → 1×2 + 3×1 = **5 Pkt**
-- [Q, Q, Q, Q, 9] → 4×2 + 1×1 = **9 Pkt**
+
+**[Q, Q, Q, 9, K]** → 3×2 + 1×1 = **7 Pkt**
+<!-- DICE: Q,Q,Q,9,K -->
+
+**[Q, 9, 9, 9, A]** → 1×2 + 3×1 = **5 Pkt**
+<!-- DICE: Q,9,9,9,A -->
+
+**[Q, Q, Q, Q, 9]** → 4×2 + 1×1 = **9 Pkt**
+<!-- DICE: Q,Q,Q,Q,9 -->
 
 #### Spalten und Mindestwerte
 
@@ -133,24 +143,42 @@ Beispiel (Asse, ×6):
 
 ---
 
-### 4. Spezialkombinationen
+### 4. Regel «Aus der Hand»
 
-#### 4.1 Sequenzen
+Eine Kombination ist **«aus der Hand»**, wenn sie in einem Wurf erzielt wird, bei dem **alle 5 Würfel geworfen wurden** (keine Würfel gehalten). In diesem Fall wird der Score der Spezialkombinationen **verdoppelt**.
+
+---
+
+### 5. Spezialkombinationen
+
+#### 5.1 Sequenzen
 
 | Sequenz | Seiten | Punkte | Aus der Hand |
 |---|---|---|---|
 | Minimal | K · Q · J · 10 · 9 | 15 | **30** |
 | Maximal | A · K · Q · J · 10 | 30 | **60** |
 
-#### 4.2 Full House
+Minimal-Sequenz:
+<!-- DICE: K,Q,J,10,9 -->
+
+Maximal-Sequenz:
+<!-- DICE: A,K,Q,J,10 -->
+
+#### 5.2 Full House
 
 Jede Kombination aus **3 gleichen + 2 gleichen** (einschließlich 9er).
+
+Beispiel: **[A, A, A, K, K]** (3 Asse + 2 Könige)
+<!-- DICE: A,A,A,K,K -->
 
 | Punkte | Aus der Hand |
 |---|---|
 | 15 | **30** |
 
-#### 4.3 Fünf Gleiche
+#### 5.3 Fünf Gleiche
+
+Beispiel: **[K, K, K, K, K]**
+<!-- DICE: K,K,K,K,K -->
 
 | Punkte | Aus der Hand |
 |---|---|
@@ -158,7 +186,10 @@ Jede Kombination aus **3 gleichen + 2 gleichen** (einschließlich 9er).
 
 Zählt auch als Full House.
 
-#### 4.4 Fünf Neuner
+#### 5.4 Fünf Neuner
+
+Beispiel: **[9, 9, 9, 9, 9]**
+<!-- DICE: 9,9,9,9,9 -->
 
 | Punkte | Aus der Hand |
 |---|---|
@@ -166,24 +197,27 @@ Zählt auch als Full House.
 
 Kann in **jede beliebige Figurenlinie** eingetragen werden (Spielerwahl).
 
-#### 4.5 Poker (4 Gleiche — nur aus der Hand)
+#### 5.5 Poker (4 Gleiche — nur aus der Hand)
 
 | Typ | Bedingung | Punkte |
 |---|---|---|
 | Poker | 4 Gleiche aus der Hand | **100** |
 | Royal Poker | 4 Asse + 1 König aus der Hand | **200** |
 
----
+Poker — **[K, K, K, K, Q]**:
+<!-- DICE: K,K,K,K,Q -->
 
-### 5. Regel «Aus der Hand»
-
-Eine Kombination ist **«aus der Hand»**, wenn sie in einem Wurf erzielt wird, bei dem **alle 5 Würfel geworfen wurden** (keine Würfel gehalten). In diesem Fall wird der Score der Spezialkombinationen **verdoppelt**.
+Royal Poker — **[A, A, A, A, K]**:
+<!-- DICE: A,A,A,A,K -->
 
 ---
 
 ### 6. Akkumulationsmodus
 
 Wird automatisch aktiviert, wenn beim Werten in einer Figurenlinie **alle 5 Würfel** die Zielfigur oder 9er zeigen.
+
+Beispiel (für Damen — alle zählen): **[Q, Q, Q, 9, 9]**
+<!-- DICE: Q,Q,Q,9,9 -->
 
 Der Spieler kann weiterwürfeln und Punkte anhäufen. Beim Abschließen wird der Gesamtwert in die Spalte eingetragen (sofern das Minimum erreicht ist).
 
@@ -198,6 +232,40 @@ Gesamt = (Summe der 5 Linien × Multiplikatoren) + Sequenzen + Full Houses + Pok
 ```
 
 Der Spieler mit der **höchsten Gesamtpunktzahl** gewinnt.
+
+---
+
+### 8. Visuelle Übersicht
+
+```
+┌───────────────────────────────────────────────────────────┐
+│  ZUG: 3 Würfe                                             │
+│                                                           │
+│  Wurf → Würfel halten?                                    │
+│          └─ Ja → nächster Wurf (behält Würfel)            │
+│          └─ Nein → In einer gültigen Zeile werten         │
+│                   (sammelt alle, zählt als aus der Hand)  │
+│                 → Passen (keine Punkte, nichts halten)    │
+│                                                           │
+│  Nach 3 Würfen → verliert den Zug                         │
+└───────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│  FIGURZEILEN: 5 Spalten, von links nach rechts                  │
+│  Min: ≥7 · ≥6 · ≥6 · ≥8 · ≥8                                    │
+│  Endsumme × Multiplikator (×2 wenn ohne Eröffnung geschlossen)  │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────┐
+│  SPEZIAL (addieren, nicht multiplizieren)           │
+│  Min-Straße:   15 / aus der Hand: 30                │
+│  Max-Straße:   30 / aus der Hand: 60                │
+│  Full House:   15 / aus der Hand: 30                │
+│  Fünf Gleiche: 20 / aus der Hand: 40                │
+│  Fünf Neunen:  30 / aus der Hand: 60                │
+│  Poker:       100 / Royal:  200 (nur aus der Hand)  │
+└─────────────────────────────────────────────────────┘
+```
 
 ---
 

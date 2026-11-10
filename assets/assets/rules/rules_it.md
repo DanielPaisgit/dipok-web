@@ -1,7 +1,9 @@
 # Poker di Dadi — Regole del Gioco
 
-> Poker di Dadi è la versione digitale del classico gioco portoghese di **Poker con i Dadi**.
+> Benvenuto a Poker di Dadi! Divertiti a giocare a questo classico gioco portoghese.
 > Questa pagina contiene prima una guida rapida, poi le regole complete.
+
+> 📌 Alla fine di questa pagina troverai un [**Riepilogo Visivo**](#resumo) di tutte le regole.
 
 ---
 
@@ -25,6 +27,8 @@
 | J | Fante |
 | 10 | Dieci |
 | 9 | Nove (jolly) |
+
+<!-- FACE_LEGEND -->
 
 Il **9 (Nove)** è un jolly: vale 1 punto per qualsiasi figura per cui il giocatore sta giocando.
 
@@ -91,9 +95,15 @@ punti = (numero di dadi con la figura × 2) + (numero di 9 × 1)
 ```
 
 Esempi (segnando per le Regine):
-- [Q, Q, Q, 9, K] → 3×2 + 1×1 = **7 pt**
-- [Q, 9, 9, 9, A] → 1×2 + 3×1 = **5 pt**
-- [Q, Q, Q, Q, 9] → 4×2 + 1×1 = **9 pt**
+
+**[Q, Q, Q, 9, K]** → 3×2 + 1×1 = **7 pt**
+<!-- DICE: Q,Q,Q,9,K -->
+
+**[Q, 9, 9, 9, A]** → 1×2 + 3×1 = **5 pt**
+<!-- DICE: Q,9,9,9,A -->
+
+**[Q, Q, Q, Q, 9]** → 4×2 + 1×1 = **9 pt**
+<!-- DICE: Q,Q,Q,Q,9 -->
 
 #### Colonne e minimi
 
@@ -133,24 +143,42 @@ Esempio (Assi, ×6):
 
 ---
 
-### 4. Combinazioni Speciali
+### 4. Regola «Di Mano»
 
-#### 4.1 Sequenze
+Una combinazione è **«di mano»** quando viene ottenuta in un lancio in cui **tutti e 5 i dadi vengono lanciati** (nessun dado trattenuto). In queste condizioni, il punteggio delle combinazioni speciali viene **raddoppiato**.
+
+---
+
+### 5. Combinazioni Speciali
+
+#### 5.1 Sequenze
 
 | Sequenza | Facce | Punti | Di mano |
 |---|---|---|---|
 | Minima | K · Q · J · 10 · 9 | 15 | **30** |
 | Massima | A · K · Q · J · 10 | 30 | **60** |
 
-#### 4.2 Full House
+Sequenza minima:
+<!-- DICE: K,Q,J,10,9 -->
+
+Sequenza massima:
+<!-- DICE: A,K,Q,J,10 -->
+
+#### 5.2 Full House
 
 Qualsiasi combinazione di **3 di una faccia + 2 di un'altra** (inclusi i 9).
+
+Esempio: **[A, A, A, K, K]** (3 Assi + 2 Re)
+<!-- DICE: A,A,A,K,K -->
 
 | Punti | Di mano |
 |---|---|
 | 15 | **30** |
 
-#### 4.3 Cinque Uguali
+#### 5.3 Cinque Uguali
+
+Esempio: **[K, K, K, K, K]**
+<!-- DICE: K,K,K,K,K -->
 
 | Punti | Di mano |
 |---|---|
@@ -158,7 +186,10 @@ Qualsiasi combinazione di **3 di una faccia + 2 di un'altra** (inclusi i 9).
 
 Conta anche come Full House.
 
-#### 4.4 Cinque 9
+#### 5.4 Cinque 9
+
+Esempio: **[9, 9, 9, 9, 9]**
+<!-- DICE: 9,9,9,9,9 -->
 
 | Punti | Di mano |
 |---|---|
@@ -166,24 +197,27 @@ Conta anche come Full House.
 
 Può essere registrato in **qualsiasi riga di figura** (a scelta del giocatore).
 
-#### 4.5 Poker (4 uguali — solo di mano)
+#### 5.5 Poker (4 uguali — solo di mano)
 
 | Tipo | Condizione | Punti |
 |---|---|---|
 | Poker | 4 uguali di mano | **100** |
 | Royal Poker | 4 Assi + 1 Re di mano | **200** |
 
----
+Poker — **[K, K, K, K, Q]**:
+<!-- DICE: K,K,K,K,Q -->
 
-### 5. Regola «Di Mano»
-
-Una combinazione è **«di mano»** quando viene ottenuta in un lancio in cui **tutti e 5 i dadi vengono lanciati** (nessun dado trattenuto). In queste condizioni, il punteggio delle combinazioni speciali viene **raddoppiato**.
+Royal Poker — **[A, A, A, A, K]**:
+<!-- DICE: A,A,A,A,K -->
 
 ---
 
 ### 6. Modalità Accumulazione
 
 Si attiva automaticamente quando, segnando in una riga di figura, **tutti e 5 i dadi** mostrano la figura obiettivo o 9.
+
+Esempio (giocando per le Regine — contano tutti): **[Q, Q, Q, 9, 9]**
+<!-- DICE: Q,Q,Q,9,9 -->
 
 Il giocatore può continuare a lanciare e accumulare punti. Il totale accumulato viene registrato nella colonna al momento della finalizzazione (se raggiunge il minimo).
 
@@ -198,6 +232,40 @@ Totale = (somma delle 5 righe × moltiplicatori) + Sequenze + Full House + Poker
 ```
 
 Vince il giocatore con il **punteggio totale più alto**.
+
+---
+
+### 8. Riepilogo Visivo
+
+```
+┌────────────────────────────────────────────────────────────┐
+│  TURNO: 3 lanci                                            │
+│                                                            │
+│  Lancio → Tenere i dadi?                                   │
+│            └─ Sì → prossimo lancio (tiene i dadi)          │
+│            └─ No → Segnare in una riga valida              │
+│                     (raccoglie tutti, conta come di mano)  │
+│                   → Passare (senza punti, senza tenere)    │
+│                                                            │
+│  Dopo 3 lanci → perde il turno                             │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│  RIGHE DI FIGURA: 5 colonne, da sinistra a destra              │
+│  Min: ≥7 · ≥6 · ≥6 · ≥8 · ≥8                                   │
+│  Totale finale × moltiplicatore (×2 se chiuso senza apertura)  │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────┐
+│  SPECIALI (si sommano, non moltiplicano)       │
+│  Scala min.:   15 / di mano: 30                │
+│  Scala max.:   30 / di mano: 60                │
+│  Full House:   15 / di mano: 30                │
+│  Cinque uguali: 20 / di mano: 40               │
+│  Cinque 9:     30 / di mano: 60                │
+│  Poker:       100 / Reale: 200 (solo di mano)  │
+└────────────────────────────────────────────────┘
+```
 
 ---
 
