@@ -46,7 +46,7 @@ Un turno comprende **fino a 3 lanci**. A ogni lancio il giocatore può:
 - **Segnare punti** — registrare il risultato in una riga ammissibile e raccogliere i 5 dadi per il lancio successivo.
 - **Passare** — avanzare al lancio successivo senza segnare né tenere.
 
-> **Nota:** All’inizio di ogni turno, i 5 dadi vengono lanciati automaticamente — questo è il primo lancio.
+> **Nota:** All’inizio di ogni turno, i 5 dadi vengono lanciati — automaticamente, o con il pulsante «Lancia» se è attivo il *primo lancio manuale*. Questo è il primo lancio.
 
 Se al termine dei 3 lanci il giocatore **non ha segnato nulla**, perde il turno (senza penalità).
 

@@ -46,7 +46,7 @@ Un turno consiste en **hasta 3 lanzamientos**. En cada lanzamiento, el jugador p
 - **Anotar puntos** — registrar el resultado en una fila elegible y recoger los 5 dados para el siguiente lanzamiento.
 - **Pasar** — avanzar al siguiente lanzamiento sin anotar ni guardar.
 
-> **Nota:** Al inicio de cada turno, los 5 dados se lanzan automáticamente — ese es el primer lanzamiento.
+> **Nota:** Al inicio de cada turno, se lanzan los 5 dados — automáticamente, o con el botón «Lanzar» si tienes activada la *primera tirada manual*. Ese es el primer lanzamiento.
 
 Si al final de los 3 lanzamientos el jugador **no ha anotado nada**, pierde el turno (sin penalización).
 

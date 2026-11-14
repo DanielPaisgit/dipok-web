@@ -46,7 +46,7 @@ A turn consists of **up to 3 rolls**. On each roll, the player may:
 - **Score** — record the result in an eligible row and collect all 5 dice for the next roll.
 - **Pass** — advance to the next roll without scoring or holding.
 
-> **Note:** At the start of each turn, all 5 dice are rolled automatically — this is the first roll.
+> **Note:** At the start of each turn, all 5 dice are rolled — automatically, or with the **Roll** button if *manual first roll* is enabled. This is the first roll.
 
 If the player has **not scored anything** after all 3 rolls, they lose their turn (no penalty).
 
@@ -149,7 +149,7 @@ Example (Aces, ×6):
 
 A combination is **"from hand"** when it is achieved on a roll where **all 5 dice were thrown** (no dice held). This can happen on any of the 3 rolls:
 - Always on the 1st roll.
-- On the 2nd or 3rd if the player scored on the previous roll (collected all dice).
+- On the 2nd or 3rd whenever you re-roll all 5 dice without holding any — whether you scored on the previous roll (collected all dice) or simply chose to re-roll everything.
 
 When a combination is "from hand", the score of special combinations is **doubled**.
 
@@ -218,7 +218,7 @@ May be entered in the next column of **any figure row** (player's choice).
 
 #### 5.5 Poker (4 of a face — from hand only)
 
-**Only counts if from hand** (no dice held on the roll). Four dice with the same face (not 9s):
+**Only counts if from hand** (no dice held on the roll). Four dice with the same face (including 9s — four 9s is a valid poker):
 
 | Type | Condition | Points |
 |---|---|---|

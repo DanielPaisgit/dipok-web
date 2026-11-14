@@ -46,7 +46,7 @@ Um turno consiste em **até 3 lançamentos**. Em cada lançamento, o jogador pod
 - **Marcar pontos** — inscrever o resultado numa linha elegível e recolher todos os 5 dados para o próximo lançamento.
 - **Passar** — avançar para o próximo lançamento sem marcar nem segurar.
 
-> **Nota:** No início de cada turno, os 5 dados são lançados automaticamente — este é o primeiro lançamento.
+> **Nota:** No início de cada turno, lanças os 5 dados — automaticamente, ou com o botão «Lançar» se tiveres o *primeiro lançamento manual* activo. Este é o primeiro lançamento.
 
 Se no fim das 3 lançamentos o jogador **não tiver marcado pontos nenhuns**, perde a vez (sem penalização).
 
@@ -149,7 +149,7 @@ Exemplo (Ases, ×6):
 
 Uma combinação é **"de mão"** quando é conseguida num lançamento em que **todos os 5 dados foram lançados** (sem dados segurados). Isto pode acontecer em qualquer um dos 3 lançamentos:
 - Sempre no 1º lançamento.
-- No 2º ou 3º se o jogador marcou pontos no lançamento anterior (recolheu todos os dados).
+- No 2º ou 3º sempre que relanças os 5 dados sem segurar nenhum — quer tenhas marcado pontos no lançamento anterior (recolheste todos os dados), quer tenhas simplesmente optado por relançar tudo.
 
 Quando se verifica "de mão", a pontuação das combinações especiais **duplica**.
 
@@ -218,7 +218,7 @@ Pode ser inscrito na coluna seguinte de **qualquer linha de figura** (à escolha
 
 #### 5.5 Poker (4 de uma face — apenas de mão)
 
-**Só conta se for de mão** (nenhum dado segurado no lançamento). Quatro dados com a mesma face (não 9s):
+**Só conta se for de mão** (nenhum dado segurado no lançamento). Quatro dados com a mesma face (incluindo 9s — quatro 9s é um poker válido):
 
 | Tipo | Condição | Pontos |
 |---|---|---|

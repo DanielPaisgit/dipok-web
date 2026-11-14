@@ -46,7 +46,7 @@ Ein Zug besteht aus **bis zu 3 Würfen**. Bei jedem Wurf kann der Spieler:
 - **Punkte eintragen** — das Ergebnis in einer zulässigen Linie eintragen und alle 5 Würfel für den nächsten Wurf aufnehmen.
 - **Passen** — zum nächsten Wurf übergehen, ohne zu werten oder zu halten.
 
-> **Hinweis:** Zu Beginn jedes Zugs werden alle 5 Würfel automatisch geworfen — dies ist der erste Wurf.
+> **Hinweis:** Zu Beginn jedes Zugs werden alle 5 Würfel geworfen — automatisch oder mit der Schaltfläche **Würfeln**, wenn *Erster Wurf manuell* aktiviert ist. Dies ist der erste Wurf.
 
 Hat der Spieler nach allen 3 Würfen **keine Punkte eingetragen**, verliert er seinen Zug (keine Strafe).
 

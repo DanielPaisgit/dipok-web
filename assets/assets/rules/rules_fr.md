@@ -44,7 +44,7 @@ Un tour comprend **jusqu'à 3 lancers**. À chaque lancer, le joueur peut :
 - **Marquer des points** — inscrire le résultat dans une ligne éligible et ramasser les 5 dés pour le prochain lancer.
 - **Passer** — avancer au prochain lancer sans marquer ni garder.
 
-> **Note :** Au début de chaque tour, les 5 dés sont lancés automatiquement — c’est le premier lancer.
+> **Note :** Au début de chaque tour, les 5 dés sont lancés — automatiquement, ou avec le bouton « Lancer » si le *premier lancer manuel* est activé. C’est le premier lancer.
 
 Si après les 3 lancers le joueur **n'a marqué aucun point**, il perd son tour (sans pénalité).
 

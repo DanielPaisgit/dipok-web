@@ -46,7 +46,7 @@ Um turno consiste em **até 3 lançamentos**. Em cada lançamento, o jogador pod
 - **Marcar pontos** — registrar o resultado em uma linha elegível e recolher todos os 5 dados para o próximo lançamento.
 - **Passar** — avançar para o próximo lançamento sem marcar nem segurar.
 
-> **Nota:** No início de cada turno, os 5 dados são lançados automaticamente — este é o primeiro lançamento.
+> **Nota:** No início de cada turno, você lança os 5 dados — automaticamente, ou com o botão «Lançar» se tiver o *primeiro lançamento manual* ativado. Este é o primeiro lançamento.
 
 Se no fim dos 3 lançamentos o jogador **não tiver marcado pontos**, perde a vez (sem penalização).
 
